@@ -34,6 +34,8 @@
         android:backgroundTint="#0000FF"
         android:text="Count"
         app:layout_constraintBaseline_toBaselineOf="@+id/show_count"
+        app:layout_constraintBottom_toTopOf="@id/button_count"
+
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -42,9 +44,10 @@
         android:layout_height="wrap_content"
         android:background="#0000ff"
         android:backgroundTint="#0000FF"
+
         android:text="Toast"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/button_count"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"

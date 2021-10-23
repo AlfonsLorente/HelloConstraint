@@ -21,30 +21,38 @@
         android:gravity="center"
         android:text="0"
         android:textColor="#0000ff"
-        android:textSize="200sp"
+        android:textSize="600sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button_count"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button_count"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="200dp"
         android:background="#0000FF"
         android:backgroundTint="#0000FF"
         android:text="Count"
-        app:layout_constraintBaseline_toBaselineOf="@+id/show_count"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:textSize="100sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_toast"
+        app:layout_constraintTop_toBottomOf="@+id/show_count" />
 
     <Button
         android:id="@+id/button_toast"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="-200dp"
         android:background="#0000ff"
         android:backgroundTint="#0000FF"
         android:text="Toast"
+        android:textSize="100sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_count"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/show_count" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
